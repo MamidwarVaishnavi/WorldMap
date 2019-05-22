@@ -1,0 +1,8 @@
+1] GET     /                                   controllers.HomeController.index
+Input:
+
+http://localhost:9000/
+
+Output:
+
+hello

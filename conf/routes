@@ -1,0 +1,19 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# https://www.playframework.com/documentation/latest/ScalaRouting
+# ~~~~
+
+# An example controller showing a sample home page
+
+GET     /                                   controllers.HomeController.index
+GET     /hello/:name                        controllers.HomeController.hello(name: String)
+GET     /getContinent/:country              controllers.HomeController.getContinentofCountry(country: String)
+GET     /getCountries/:continent            controllers.HomeController.getContries(continent: String)
+GET     /checkContinent1/checkContinent2/:first/:second      controllers.HomeController.CountryLieInSameContinent(first:String,second:String)
+GET     /getcitiesbypassingcountry/:country controllers.HomeController.cities(country:String)
+GET     /getcityacrossgloble               controllers.HomeController.getcityacrossgloble
+GET     /getcitiesonfirstcountry/:country  controllers.HomeController.cityOnFirstLetter(country:String)
+GET     /getcitiesofcontinent/:continent   controllers.HomeController.getcitiesofcontinent(continent:String)
+POST    /addContinent                      controllers.HomeController.addContinent
+POST    /delContinent                      controllers.HomeController.delContinent
+POST    /addCity                           controllers.HomeController.addCity
